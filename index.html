@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aggieventure</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheets -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1 id = "top">Aggieventure</h1>
+    
+    <p id = "authors" class = "center">
+      By: Danielle and Roshini
+    </p>
+    
+    <p id = "description">
+      <i>Enter the life of an Aggie student... <br> what could possibly go wrong?</i>
+    </p>
+    
+    <p class = "action1">
+      You wake up and get out of bed. What do you chose to wear? <br>
+      <a class = "link1" href = "#onlyChoice" onclick = "return clothes();">Aggie Shirt</a> <br>
+      <a class = "link1" href = "#onlyChoice" onclick = "return clothes();">Aggie Shirt</a>
+    </p>
+    <a href = "#top">Back to Top</a>
+    
+    <p id = "onlyChoice" class = "result">
+      Good choice!! 
+    </p>
+    
+    <p class = "action2">
+      You are now dressed but are feeling a little hungry. What do you do? <br>
+      <a class = "link2" href = "#eat" onclick = "return breakfast(2);">Eat Breakfast</a> <br>
+      <a class = "link2" href = "#skip" onclick = "return breakfast(0);">Skip Breakfast</a>
+    </p>
+    <a href = "#top">Back to Top</a>
+    
+    <p id = "skip" class = "result">
+      That's probably not good but you do you.
+    </p>
+    
+    <p id = "eat" class = "result">
+      You had a bowl of cereal. The cereal was Lucky Charms because that's the only good cereal.
+    </p>
+    
+    <p class = "action1">
+      Now you feel like studying. Where do you go to study? <br>
+      <a class = "link1" href = "#evans" onclick = "return dreamFuel();">Evans Library</a> <br>
+      <a class = "link1" href = "#zach" onclick = "return dreamFuel();">Zachry Building</a> <br>
+      <a class = "link1" href = "#nostudy" onclick = "return nightmareFuel();">Nah,never mind.</a>
+    </p>
+    <a href = "index.html#top">Back to Top</a>
+    
+    <!-- Code for Evans -->
+    <p class = "action2" id = "evans">
+      You go to the Evans Library but now you have to chose a floor to go on. Do you go on a quiet floor or a normal floor? <br>
+      <a class = "link2" href = "#quiet" onclick = "return evansFloor(2)">Quiet Floor</a> <br>
+      <a class = "link2" href = "#normal" onclick = "return evansFloor(0);">Normal Floor</a> <br>
+      <a class = "link2" href = "index.html#lunch">Nah, never mind.</a>
+    </p>
+    
+    <p id = "quiet" class = "result">
+      You go to a quiet floor. You are studying when you sneezed really loudly. Everyone turned and stared at you. Whoops.<br>
+      <a class = "link1" onclick = "return studytime()">(Do as much studying as you can)</a>
+    </p>
+    
+    <p id = "normal" class = "result">
+      You go to a normal floor. You are studying when suddenly some people behind you start being super loud. You do not get a lot of studying done.<br>
+      <a class = "link1" onclick = "return studytime()">(Do as much studying as you can)</a>
+    </p>
+    
+    <p>
+    <a class = "link1" href = "#lunch">Leave for MSC</a>
+    </p>
+
+    <!-- Code for Zach -->
+    <p class = "action1" id = "zach">
+      You go to the ZACH but now you have to chose where to study. Where do you go? <br>
+      <a class = "link1" href = "#stairs" onclick = "return zachFloor(2)">The Stairs</a> <br>
+      <a class = "link1" href = "#garden" onclick = "return zachFloor(0)">The Garden</a> <br>
+      <a class = "link1" href = "index.html#lunch">Nah, never mind.</a>
+    </p>
+    
+    <p id = "stairs" class = "result">
+      You go to the stairs to study. You are studying but people keep walking by you and being loud. You have trouble studying.<br>
+      <a class = "link1" onclick = "return studytime()">(Do as much studying as you can)</a>
+    </p>
+    
+    <p id = "garden" class = "result">
+      You go to the Garden to study. Unforturnately for you, it's over a 100 degees outside. As soon as you walk outside, you instantly melt. Bad idea going out there.<br> 
+      <a class = "link1" onclick = "return studytime()">(Do as much studying as you can)</a>
+    </p>
+    
+    <p>
+    <a class = "link1" href = "#lunch">Leave for MSC</a>
+    </p>
+    
+    <p id = "nostudy">
+    </p>
+    
+    <p class = "action2" id = "lunch">
+      You decide to go to the MSC for lunch. Where do you go to eat? <br>
+      <a class = "link2" href = "#food" onclick = "return food(2);">The Food Court</a> <br>
+      <a class = "link2" href = "#bottom" onclick = "return food(0);">The Bottom Level</a>
+    </p>
+    <a href = "#top">Back to Top</a>
+    
+    <p id = "food" class = "result">
+      You go to the Food Court in the MSC. You get your food and spot a friend. You sit with your friend and have a nice conversation. You finish your food.
+    </p>
+    
+    <p id = "bottom" class = "result">
+      You go to the Bottom Level. You get some Panda Express and watch Spongebob on the TVs.
+    </p>
+    
+    <p class = "action1" id = "rev">
+      You are about to leave the MSC when you spot her. She has beautiful brown hair, the most gorceous of eyes, and four cute little paws. You found Reveille! What do you do?<br>
+      <a class = "link1" href = "#pet" onclick = "return pet(2);">Pet Her, Of Course</a> <br>
+      <a class = "link1" href = "#noPet" onclick = "return pet(0);">Don't Pet Her Like a Monster</a>
+    </p>
+    <a href = "#top">Back to Top</a>
+    
+    <p id = "pet" class = "result">
+      You pet her fluffy head. She is definitely best girl. You leave the MSC.
+    </p>
+    
+    <p id = "noPet" class = "result">
+      You're not allowed to not pet her. I don't make the rules. <br>
+      <a class = "link1" href = "#rev" onclick = "return goBack()">Do it right this time</a>
+    </p>
+    
+    <p class = "action2">
+      You are outside and realize you have class soon! What do you do? <br>
+      <a class = "link2" href = "#classTime" onclick = "return attend(2);">Go to Class</a> <br>
+      <a class = "link2" href = "#noClass" onclick = "return attend(0);">Skip Class</a>
+    </p>
+    <a href = "#top">Back to Top</a>
+    
+    <p id = "classTime" class = "result">
+      You go to class. You almost fall asleep from how boring it was but are glad you won't be behind. <br>
+      <a class = "link1" onclick = "return studytime()">(Take notes)</a>
+    </p>
+ 
+    <p id = "noClass" class = "result">
+      You skip class like the rebel you are. I hope you like working at McDonald's. Anyways, you skip class and are now behind in your school work.
+    </p>
+    
+    <p>
+      Your next class is a recitation related to the one before. Your TA springs a suprise quiz on you.
+    </p>
+   
+    <p id = "studycounter"></p>
+    
+    <p>The result is...</p>
+    
+    <p id ="quiz" onclick ="quiz()"> (Click here)</p>
+      
+    <p>
+      You go back to your dorm and decide to sleep. <br>
+    </p>
+      
+    <div class = "center">
+    <input class="button" type="button" value="Dream" onclick = "dream()">
+    
+    
+    <p> The Dream Scale</p>
+    <p id = "counter"> 0 </p>
+    
+    <p id = "dream"> </p>
+    
+    <img src = "https://cdn.glitch.com/af4a9983-87bc-42dd-a6c3-c9dd0dd49a4a%2Fwildjoker.png?v=1567930949246" alt="dreampict.value2" width = "250pz">
+    
+    <p> </p>
+    </div>
+    
+    <a href = "#top">Back to Top</a>
+    
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
